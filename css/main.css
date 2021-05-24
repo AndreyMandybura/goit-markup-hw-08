@@ -24,6 +24,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  outline: 1px solid red;
 }
 
 body {
@@ -32,6 +33,12 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 h1,
@@ -64,11 +71,33 @@ p {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  background-color: aqua;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: coral;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    background-color: lightgreen;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    background-color: yellow;
+  }
 }
 
 .container--page-header {
@@ -341,9 +370,39 @@ p {
 }
 
 .team__item {
-  flex-basis: calc((100% - 4 * 30px) / 4);
+  flex-basis: 100%;
   display: flex;
   flex-direction: column;
+}
+
+@media screen and (min-width: 468px) {
+  .team__item {
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team__item {
+    max-width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__item {
+    width: 270px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team__item {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__item {
+    flex-basis: calc((100% - 4 * 30px) / 4);
+  }
 }
 
 .team__item-position {
