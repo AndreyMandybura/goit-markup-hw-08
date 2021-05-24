@@ -1,0 +1,22 @@
+.feature__icon-box {
+  display: flex;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  padding: 25px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.feature__item {
+  flex-basis: calc((100% - 4 * 30px) / 4);
+}
+
+.feature__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--title-color);
+}

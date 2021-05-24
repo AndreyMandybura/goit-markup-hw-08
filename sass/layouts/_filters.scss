@@ -1,0 +1,38 @@
+.filters__filter {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  cursor: pointer;
+  color: var(--title-color);
+  background-color: var(--btn-light-bg);
+  box-shadow: none;
+  border-radius: 4px;
+  border: 0;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filters__filter:hover,
+.filters__filter:focus {
+  color: var(--hero-color);
+  background-color: var(--btn-dark-bg);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.filters__list {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filters__iteam:not(:first-child) {
+  margin-left: 8px;
+}
+
+.filters__btn {
+  padding: 6px 22px;
+}

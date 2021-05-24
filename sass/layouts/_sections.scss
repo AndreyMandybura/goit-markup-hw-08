@@ -1,0 +1,25 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section--hero {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.section--feature {
+  padding-bottom: 0;
+}
+
+.section--team {
+  background-color: var(--bg-team-section);
+}
+
+.section--filters {
+  padding-bottom: 0;
+}
+
+.section--projects {
+  padding-top: 20px;
+}
