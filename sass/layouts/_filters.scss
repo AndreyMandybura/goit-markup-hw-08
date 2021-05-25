@@ -24,13 +24,33 @@
 }
 
 .filters__list {
-  justify-content: center;
+  justify-content: flex-start;
   display: flex;
   flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 
 .filters__iteam:not(:first-child) {
   margin-left: 8px;
+}
+
+.filters__iteam:nth-child(4) {
+  margin-left: 0px;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 8px;
+  }
+}
+
+.filters__iteam:nth-child(n + 4) {
+  margin-top: 15px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0px;
+  }
 }
 
 .filters__btn {

@@ -259,8 +259,8 @@ p {
 
 .hero__main-title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -268,10 +268,14 @@ p {
   color: var(--hero-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .hero__main-title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
 .hero__box {
-  max-width: 1600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
   background-color: #c4c4c4;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/main-hero-img.jpg);
   background-repeat: no-repeat;
@@ -283,10 +287,40 @@ p {
   align-items: center;
 }
 
+@media screen and (max-width: 767px) {
+  .hero__box {
+    max-width: 480px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__box {
+    max-width: 768px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__box {
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
 .hero__content {
-  width: 696px;
+  width: 360px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__content {
+    width: 696px;
+  }
 }
 
 .hero__btn {
@@ -820,13 +854,39 @@ p {
 }
 
 .filters__list {
-  justify-content: center;
+  justify-content: flex-start;
   display: flex;
   flex-wrap: wrap;
 }
 
+@media screen and (min-width: 768px) {
+  .filters__list {
+    justify-content: center;
+  }
+}
+
 .filters__iteam:not(:first-child) {
   margin-left: 8px;
+}
+
+.filters__iteam:nth-child(4) {
+  margin-left: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .filters__iteam:nth-child(4) {
+    margin-left: 8px;
+  }
+}
+
+.filters__iteam:nth-child(n + 4) {
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .filters__iteam:nth-child(n + 4) {
+    margin-top: 0px;
+  }
 }
 
 .filters__btn {
@@ -887,7 +947,19 @@ p {
 }
 
 .projects__item {
-  flex-basis: calc((100% - 3 * 30px) / 3);
+  flex-basis: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .projects__item {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects__item {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+  }
 }
 
 .projects__item-link {
