@@ -1,6 +1,7 @@
 .page-header__mobile {
   @media screen and (max-width: 767px) {
     position: absolute;
+    z-index: 98;
     top: 0;
     left: 0;
     width: 480px;
@@ -189,10 +190,10 @@
 .page-header__nav-menu {
   display: flex;
   align-items: center;
-  margin-right: 84px;
+  margin-right: 74px;
 
   @media screen and (min-width: 1200px) {
-    margin-right: 305px;
+    margin-right: 309px;
   }
 }
 
