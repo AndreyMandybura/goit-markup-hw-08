@@ -193,7 +193,19 @@ p {
 }
 
 .section--projects {
-  padding-top: 20px;
+  padding-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .section--projects {
+    padding-top: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section--projects {
+    padding-top: 20px;
+  }
 }
 
 @media screen and (max-width: 767px) {
