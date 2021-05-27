@@ -15,8 +15,14 @@
     <header class="page-header">
         <div class="container container--page-header">
                 <a class="page-header__nav-logo logo" href=""><span class="page-header__logo-blue-style">Web</span><span class="page-header__logo-black-style">Studio</span></a>
-           <div class="page-header__mobile">
+                <div class="page-header__mobile is-open" id="page-header__mobile" data-menu>
                 <nav class="page-header__nav-menu">
+                    <button type="button" class="page-header__button is-open" aria-expanded="false" aria-controls="page-header__mobile" data-menu-button>
+                        <svg width="40px" height="40px" class="page-header__button-menu" aria-label="Переключатель мобильного меню">
+                            <use class="page-header__button-icon-menu" href="./images/icons.svg#icon-mobile-menu"></use>
+                            <use class="page-header__button-icon-menu-close" href="./images/icons.svg#icon-mobile-menu-close"></use>
+                        </svg> 
+                    </button>
                 <ul class="page-header__menu list">
                     <li class="page-header__item"><a class="page-header__nav page-header__active-link" href="">Студия</a></li>
                     <li class="page-header__item"><a class="page-header__nav" href="./portfolio.html">Портфолио</a></li>
@@ -36,10 +42,10 @@
                         +38 096 111 11 11</a></li>
                 </ul>
                 <ul class="page-header__socials list">
-                    <li class="page-header__socials-item"><a class="page-header__socials-link">Instagram</a></li>
-                    <li class="page-header__socials-item"><a class="page-header__socials-link">Twitter</a></li>
-                    <li class="page-header__socials-item"><a class="page-header__socials-link">Facebook</a></li>
-                    <li class="page-header__socials-item"><a class="page-header__socials-link">LinkedIn</a></li>
+                    <li class="page-header__socials-item"><a class="page-header__socials-link" href="" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                    <li class="page-header__socials-item"><a class="page-header__socials-link" href="" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                    <li class="page-header__socials-item"><a class="page-header__socials-link" href="" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                    <li class="page-header__socials-item"><a class="page-header__socials-link" href="" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
                 </ul>
            </div>
         </div>
@@ -453,5 +459,6 @@
         </div>
     </div> -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
