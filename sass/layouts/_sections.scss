@@ -9,20 +9,32 @@
 }
 
 .section--feature {
-  padding-top: 0;
-  padding-bottom: 0;
-
-  @media screen and (min-width: 768px) {
-    padding-top: 60px;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
+    padding-bottom: 0;
   }
 }
 
 .section--team {
   background-color: var(--bg-team-section);
+  padding-bottom: 30px;
+  padding-top: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+}
+
+.section--clients {
+  padding-top: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+  }
 }
 
 .section--filters {

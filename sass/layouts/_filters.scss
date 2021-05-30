@@ -33,6 +33,12 @@
   }
 }
 
+.filters__iteam {
+  @media screen and (max-width: 479px) {
+    margin-bottom: 15px;
+  }
+}
+
 .filters__iteam:not(:first-child) {
   margin-left: 8px;
 }
@@ -40,13 +46,19 @@
 .filters__iteam:nth-child(4) {
   margin-left: 0px;
 
+  @media screen and (max-width: 479px) {
+    margin-left: 8px;
+  }
+
   @media screen and (min-width: 768px) {
     margin-left: 8px;
   }
 }
 
 .filters__iteam:nth-child(n + 4) {
-  margin-top: 15px;
+  @media screen and (min-width: 480px) {
+    margin-top: 15px;
+  }
 
   @media screen and (min-width: 768px) {
     margin-top: 0px;
